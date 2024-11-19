@@ -1,0 +1,131 @@
+
+/* Paleta de colores */ 
+:root {
+  
+    --green-light: #a8e6cf;
+    --green-main: #4caf50;
+    --green-dark: #388e3c;
+    --light-gray: #f4f4f4;  /* Fondo del contenedor */
+    --white: #ffffff;
+    --gray-dark: #333333;
+    --gradient-start: rgba(255, 255, 255, 0.3); /* Transición sutil para el fondo */
+    --gradient-end: rgba(0, 0, 0, 0.1); /* Sombra sutil para el fondo */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white); /* Fondo blanco */
+    color: var(--gray-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradiente suave */
+}
+
+/* Estilo del contenedor principal */
+.login-container {
+    background-color: var(--white); /* Fondo blanco */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 60px;
+    width: 800px; /* Tamaño más amplio */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Título */
+h2 {
+    color: var(--green-dark); /* Color verde oscuro */
+    margin-bottom: 10px;
+    font-size: 48px; /* Tamaño grande */
+    font-weight: 600; /* Poppins en bold */
+}
+
+/* Descripción del rol */
+p {
+    
+    color: var(--green-main); /* Color verde principal */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Contenedor de roles */
+.role-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+/* Bloques de roles */
+.role-block {
+    background-color: var(--green-main); /* Fondo verde claro */
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 60px;
+    width: 300px;
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+.role-block:hover {
+    transform: scale(1.1); /* Agrandamiento suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--green-dark); /* Cambio de color a verde principal */
+}
+
+.role-block:active {
+    background-color: var(--green-dark); /* Cambio de color al presionar */
+    transform: scale(1.05);
+}
+
+/* Iconos de roles */
+.role-icon {
+    width: 140px; /* Icono más grande */
+    height: 140px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.role-block:hover .role-icon {
+    transform: scale(1.15); /* Aumento de tamaño al pasar el mouse */
+}
+
+/* Estilo para las palabras debajo de los íconos */
+.role-block p {
+    color: var(--white);
+    border-radius: 12px; 
+    text-align: center;
+    font-weight: 100px; 
+    margin-top: 20px;
+    font-size: 24px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgb(255, 0, 0); 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto interactivo */
+.role-block:hover p {
+    color: var(--white); /* Cambio de color al pasar el mouse */
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-align: center;
+}

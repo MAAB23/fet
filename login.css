@@ -1,0 +1,136 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #4caf50;  /* Verde principal */
+    --secondary-color: #388e3c; /* Verde oscuro */
+    --light-bg: #f4f4f4;  /* Fondo claro */
+    --white: #ffffff;  /* Blanco */
+    --gray-dark: #333333;  /* Gris oscuro */
+    --border-color: #ddd;  /* Borde suave */
+    --hover-bg: #45a049; /* Fondo verde en hover */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg); /* Fondo claro */
+    color: var(--gray-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1)); /* Gradiente suave */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: var(--white); /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 40px;
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo para la caja */
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: var(--primary-color); /* Color verde */
+    font-size: 36px; /* Tamaño grande */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Estilo de los campos del formulario */
+.form-label {
+    text-align: left;
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+/* Estilo de los inputs */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo cuando el input está en foco */
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Estilo del botón */
+.btn-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: var(--hover-bg); /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo del enlace "volver" */
+a.btn-link {
+    background-color: var(--secondary-color);
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+a.btn-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* Estilo del select */
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo cuando el select está en foco */
+.form-select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Estilo de las áreas de texto */
+textarea.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 120px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo de la textarea cuando está en foco */
+textarea.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}

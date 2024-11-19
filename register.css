@@ -1,0 +1,160 @@
+/* Variables de color */
+:root {
+    --primary-color: #4caf50;  /* Verde principal */
+    --secondary-color: #388e3c; /* Verde oscuro */
+    --light-bg: #f4f4f4;  /* Fondo claro */
+    --white: #ffffff;  /* Blanco */
+    --gray-dark: #333333;  /* Gris oscuro */
+    --border-color: #ddd;  /* Borde suave */
+    --hover-bg: #45a049; /* Fondo verde en hover */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--gray-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    padding: 20px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--gray-dark);
+}
+
+/* Campos de formulario */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Botones */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    bottom: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--hover-bg);
+}
+
+a.btn-link {
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    padding: 8px 10px; 
+    border-radius: 10px; 
+    font-size: 18px;
+    bottom: 40px;
+    color: var(--white);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+a.btn-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--light-bg);
+    color: var(--gray-dark);
+}
+
+table td {
+    background-color: var(--white);
+    color: var(--gray-dark);
+}
+
+table td a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Botones de la tabla */
+table td a.btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+table td a.btn-warning {
+    background-color: #ffc107;
+    color: var(--gray-dark);
+}
+
+table td a.btn-danger {
+    background-color: #dc3545;
+    color: var(--white);
+}
+
+table td a.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+table td a.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Efectos de hover para los inputs */
+input:hover, select:hover {
+    border-color: var(--secondary-color);
+}

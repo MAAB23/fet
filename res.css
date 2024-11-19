@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+canvas {
+    margin-top: 20px;
+}
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+select.form-select {
+    background-color: #e9f5ec;
+    border: 1px solid #28a745;
+    color: #155724;
+}
+select.form-select:focus {
+    box-shadow: 0 0 3px rgba(40, 167, 69, 0.5);
+    border-color: #218838;
+}
+
+
+/* Botones verdes para "Ver Resultados" y "Volver" */
+.btn-success {
+    background-color: #28a745;
+    border-color: #00ff3c;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #00f83a;
+}
+
+.btn-success:active {
+    background-color: #1e7e34;
+    border-color: #00f83a;
+}

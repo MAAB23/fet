@@ -1,0 +1,14 @@
+select {
+    width: 100%; /* Ajusta el ancho para que sea igual al de los otros campos */
+    padding: 10px; /* Agrega un relleno similar al de los campos de texto */
+    margin-bottom: 20px; /* Espaciado inferior para que coincida con el diseño de los otros campos */
+    border: 1px solid #ccc; /* Borde similar */
+    border-radius: 4px; /* Redondea las esquinas */
+    box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño total */
+    font-size: 16px; /* Ajusta el tamaño de la fuente para que sea uniforme */
+}
+
+
+
+
+

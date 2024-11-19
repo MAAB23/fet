@@ -1,0 +1,206 @@
+/* Paleta de colores */
+:root {
+    --green-light: #a8e6cf;
+    --green-main: #4caf50;
+    --green-dark: #388e3c;
+    --light-gray: #f4f4f4;  /* Fondo del contenedor */
+    --white: #ffffff;
+    --gray-dark: #333333;
+    --gradient-start: rgba(255, 255, 255, 0.3); /* Transición sutil para el fondo */
+    --gradient-end: rgba(0, 0, 0, 0.1); /* Sombra sutil para el fondo */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--white); /* Fondo blanco */
+    color: var(--gray-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradiente suave */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    text-align: center;
+    background-color: var(--light-gray); /* Nuevo color de fondo para el contenedor */
+    border-radius: 12px;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Sombra más dramática */
+    padding: 100px;
+    width: 100%;
+    max-width: 800px; /* Mayor tamaño */
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/pw_maze.png'), var(--light-gray); /* Patrón de fondo sutil */
+    background-size: cover; /* Asegura que el patrón cubra todo el contenedor */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Título principal */
+h2 {
+    font-size: 48px; /* Doble de tamaño */
+    color: var(--green-dark);
+    margin-bottom: 50px;
+    font-weight: 700;
+    animation: slideIn 1s ease-out;
+}
+
+/* Animación de entrada del título */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor de roles */
+.role-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px; /* Aumentado espacio entre elementos */
+}
+
+/* Bloques de roles */
+.role-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-main); /* Fondo verde del bloque */
+    padding: 40px; /* Mayor padding */
+    border-radius: 15px;
+    width: 240px; /* Doble de tamaño */
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s, border-radius 0.4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más dramática */
+}
+
+.role-block:hover {
+    transform: scale(1.15); /* Mayor aumento de tamaño */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Sombra intensa */
+    background-color: var(--green-dark); /* Cambio de color al pasar el mouse */
+    border-radius: 30px; /* Efecto de border-radius más redondeado */
+}
+
+/* Iconos de roles */
+.role-icon {
+    width: 120px;  /* Aumento de tamaño de iconos */
+    height: 120px;
+    margin-bottom: 30px; /* Mayor espacio */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.role-block:hover .role-icon {
+    opacity: 0.9;
+    transform: scale(1.15); /* Aumento de iconos al pasar el mouse */
+}
+
+/* Texto debajo de los íconos */
+.role-block p {
+    font-size: 24px; 
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Estilo de enlace de navegación (opcional si agregas más enlaces) */
+a {
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Estilo adicional para el botón */
+button.btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de escala */
+}
+/* Estilo adicional para el botón */
+.btn-link {
+    display: flex;
+    padding: 10px 15px; 
+    background-color: var(--green-dark); 
+    color: var(--white); 
+    text-decoration: none; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; 
+    bottom: 40px; 
+    left: 56%; 
+    width: auto;
+}
+
+/* Efecto al pasar el mouse */
+.btn-link:hover {
+    background-color: var(--green-main); 
+    transform: scale(1.05); 
+}
+.btn-resultados {
+    display: flex;
+    padding: 10px 15px; 
+    background-color: var(--green-dark); 
+    color: var(--white); 
+    text-decoration: none; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; 
+    bottom: 40px; 
+    left: 36%; 
+    width: auto;
+}
+
+/* Efecto al pasar el mouse */
+.btn-resultados:hover {
+    background-color: var(--green-main); 
+    transform: scale(1.05); 
+}
+
+
+.ii{
+
+
+    display: flex;
+    padding: 10px 15px; 
+    background-color: var(--green-dark); 
+    color: var(--white); 
+    text-decoration: none; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; 
+    bottom: 40px; 
+    left: 25%; 
+    width: auto;
+
+
+
+}
+
+

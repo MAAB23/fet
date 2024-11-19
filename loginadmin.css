@@ -1,0 +1,83 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #28a745; /* Borde verde */
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #28a745; /* Título en verde */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #28a745; /* Borde verde */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Fondo verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Estilo para el panel administrativo */
+h1 {
+    text-align: center;
+    color: #28a745; /* Título en verde */
+}
+
+p {
+    text-align: center;
+}
+
+/* Estilo para el enlace de cierre de sesión */
+a {
+    display: block;
+    text-align: center;
+    color: #28a745; /* Enlace en verde */
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de alerta */
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
